@@ -88,9 +88,9 @@ gray-matterで記事のタイトルや日付、タグ付けなどの付加情報
 
 ### デモ
 
-* [github]()
+* [github](https://github.com/bigtree310/devs-pocket)
 
-* [page]()
+* [page](https://devs-pocket.vercel.app/)
 
 
 
