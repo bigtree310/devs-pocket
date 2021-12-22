@@ -32,3 +32,60 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Folder Structure
+
+```
+/project_root/
+  /docs
+  /public
+  /pages
+  /components
+  /foundations
+  /hooks
+  /stores
+  /lib
+  /pages
+  /styles
+  /types
+```
+
+### /docs
+
+ドキュメント
+
+### /public
+
+静的ファイル
+
+### /pages
+
+Nextjsでルーティングされるページコンポーネント
+
+### /components
+
+コンポーネント群
+
+### /styles
+
+グローバル・テーマ・汎用的なスタイル定義<br>
+個別のcssはtsxと同じ階層に置く。
+
+### /types
+
+typescriptのカスタム定義
+
+### /foundation
+
+UIに直接関係しない機能のみのコンポーネントを配置する。<br />
+デザインを含まなければ、汎用的でもコンテキストに密結合でもどちらでもいい。
+
+### hooks
+  
+汎用的なreact hooks<br />
+特定のコンテキストへの依存はNG
+
+### lib
+
+モジュール化されたロジック<br />
+lib内部のモジュールがlib以外に依存するのはNG
