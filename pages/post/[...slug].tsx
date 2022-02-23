@@ -17,7 +17,6 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async ({ params }: any) => {
-    console.log(params);
     const posts = await getPosts();
     const post = posts.find((post) => post.id.toString() === params.slug[0]);
     const mdContent = post?.mdContent ? post.mdContent : ""
